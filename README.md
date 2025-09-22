@@ -2,21 +2,22 @@
 
 ## Over dit project
 
-In het magazijn liggen een heleboel materialen die gebruikt kunnen worden door studenten en docenten. Een magazijnuitleenapplicatie zou superhandig zijn om de zaken georganiseerd te krijgen. Het maakt het gemakkelijker om bij te houden wie wat leent, wanneer het terug moet worden gebracht en voorkomt het eeuwige mysterie van "waar is dat ding gebleven?". Het bespaart tijd, vermindert verwarring en maakt het beheer van magazijnvoorraden veel efficiënter.
+Voor studenten en docenten liggen er in het magazijn veel materialen die ze kunnen gebruiken. Een app om deze spullen te lenen is een goede oplossing om alles netjes te organiseren. Met de app kun je makkelijk bijhouden wie wat leent en wanneer het terug moet. Zo raken spullen niet meer kwijt. Dit bespaart tijd, zorgt voor minder verwarring en maakt het voorraadbeheer een stuk makkelijker.
 
-## Functionaliteiten
+## Functies
 
-Naar aanleiding van de behoefteanalyse is er een overzicht van de gewenste functionaliteiten:
-*   Gebruikersbeheer (beheerders, medewerkers, gebruikers).
-*   Beheer van de itemcatalogus.
-*   Een systeem voor het uitlenen en terugbrengen van items.
-*   Bijhouden van de uitleenstatus (uitgeleend, geretourneerd, te laat).
-*   Notificaties voor gebruikers (bijv. herinneringen voor het terugbrengen).
-*   Een systeem voor het afhandelen van boetes voor te laat ingeleverde items.
+Dit zijn de belangrijkste functies van de app:
 
-## Database Schema (ERD)
+*   **Gebruikers:** Je kunt verschillende rollen aanmaken (beheerder, medewerker, gebruiker).
+*   **Items:** Je kunt spullen toevoegen, aanpassen en verwijderen.
+*   **Uitleensysteem:** Een systeem om spullen te lenen en terug te brengen.
+*   **Status:** Je kunt zien of iets is uitgeleend, teruggebracht of te laat is.
+*   **Notificaties:** Gebruikers krijgen een berichtje, bijvoorbeeld als ze iets moeten terugbrengen.
+*   **Boetes:** Een systeem voor boetes als spullen te laat terugkomen.
 
-Hieronder staat een voorbeeld van de entiteiten, attributen en relaties voor de database.
+## Database Opbouw (ERD)
+
+Hieronder zie je hoe de database is opgebouwd.
 
 ### Entiteiten en Attributen
 
@@ -59,9 +60,9 @@ Hieronder staat een voorbeeld van de entiteiten, attributen en relaties voor de 
 
 ### Relaties
 
-*   Een **Gebruiker** kan meerdere **Uitleen** hebben.
-*   Een **Item** kan meerdere **Uitleen** hebben.
-*   Een **Uitleen** hoort bij één **Gebruiker** en één **Item**.
-*   Een **Gebruiker** kan meerdere **Notificaties** ontvangen.
+*   Een **Gebruiker** kan meerdere spullen **lenen** (meerdere Uitleen-records).
+*   Een **Item** kan door meerdere mensen **geleend worden** (meerdere Uitleen-records).
+*   Elke **Uitleen** hoort bij één **Gebruiker** en één **Item**.
+*   Een **Gebruiker** kan meerdere **Notificaties** krijgen.
 *   Een **Notificatie** hoort bij één **Gebruiker**.
-*   Een **Uitleen** kan één of geen **Boete** hebben.
+*   Een **Uitleen** kan een **Boete** hebben (als het te laat is).
