@@ -3,5 +3,13 @@ body{
 }
 
 header{
-    
+    color: black;
+    outline: red solid 10px;
+    width: auto;
+    height: 100px;
+}
+
+button{
+    width: auto;
+    align-items: center;
 }
