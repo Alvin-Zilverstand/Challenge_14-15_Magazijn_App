@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <defs>
+        <linearGradient id="buildingGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#357ABD;stop-opacity:1" />
+        </linearGradient>
+        <linearGradient id="roofGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#EE5253;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+
+    <!-- Main Building -->
+    <rect x="4" y="12" width="24" height="16" fill="url(#buildingGradient)" rx="1"/>
+    
+    <!-- Roof with 3D effect -->
+    <path d="M2 12L16 4L30 12L16 8Z" fill="url(#roofGradient)"/>
+    
+    <!-- Main Door with 3D effect -->
+    <path d="M13 16h6v12h-6z" fill="#2D3436"/>
+    <path d="M13 16h1v12h-1z" fill="#636E72"/>
+    <circle cx="18" cy="22" r="0.5" fill="#FFD32A"/>
+    
+    <!-- Windows -->
+    <rect x="7" y="15" width="3" height="3" fill="#74B9FF" rx="0.5"/>
+    <rect x="22" y="15" width="3" height="3" fill="#74B9FF" rx="0.5"/>
+    
+    <!-- Shelves with boxes -->
+    <g transform="translate(6,20)">
+        <!-- Left shelf -->
+        <rect width="4" height="0.8" fill="#636E72"/>
+        <rect x="0.5" y="-1.5" width="1.2" height="1.2" fill="#FAB1A0"/>
+        <rect x="2.2" y="-1.5" width="1.2" height="1.2" fill="#81ECEC"/>
+    </g>
+    
+    <g transform="translate(22,20)">
+        <!-- Right shelf -->
+        <rect width="4" height="0.8" fill="#636E72"/>
+        <rect x="0.5" y="-1.5" width="1.2" height="1.2" fill="#55EFC4"/>
+        <rect x="2.2" y="-1.5" width="1.2" height="1.2" fill="#FFEAA7"/>
+    </g>
+    
+    <!-- Loading Dock -->
+    <rect x="11" y="27" width="10" height="1" fill="#636E72"/>
+    
+    <!-- Subtle Shadow -->
+    <rect x="4" y="28" width="24" height="0.5" fill="rgba(0,0,0,0.2)"/>
+</svg>
