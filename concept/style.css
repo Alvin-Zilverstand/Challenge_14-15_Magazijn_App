@@ -1,5 +1,5 @@
 body{
-    background-color: greenyellow;
+    background-color: #cd977e;
 }
 
 
@@ -7,16 +7,17 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #333333;
+  background-color: #d3705a;
   display: flex;
   justify-content: center;
   border-radius: 15px;
 }
 
 button{
+    color: white;
     font-size: large;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
-    background-color: chocolate;
+    background-color: #1f4952;
     height: 100px;
     width: 150px;
     margin: 1rem;
