@@ -1,15 +1,24 @@
 body{
-    background-color: blueviolet;
+    background-color: greenyellow;
 }
 
-header{
-    color: black;
-    outline: red solid 10px;
-    width: auto;
-    height: 100px;
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
 }
 
 button{
-    width: auto;
-    align-items: center;
+    font-size: large;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    background-color: chocolate;
+    height: 100px;
+    width: 150px;
+    margin: 1rem;
+    border-radius: 5px;
 }
