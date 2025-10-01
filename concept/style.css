@@ -35,8 +35,19 @@ button{
     height: 75px;
     width: 100px;
     border-radius: 5px;
+    border: black solid 2px;
 }
 
 button:hover{
     background-color: #cd977e;
+}
+
+#info{
+    padding: 10px;
+    border-radius: 15px;
+    border:black solid 2px ;
+    margin: 3rem;
+    background-color: white;
+    height: 600px;
+    width: 900px;
 }
