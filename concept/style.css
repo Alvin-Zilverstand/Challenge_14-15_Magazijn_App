@@ -21,10 +21,10 @@ header{
 }
 
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-    display: none; /* Hide old ul if still present */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none; 
 }
 
 button{
