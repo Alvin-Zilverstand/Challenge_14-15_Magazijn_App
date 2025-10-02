@@ -49,6 +49,7 @@ button:hover{
     margin: auto;
     background-color: white;
     max-width: 90%;
+    height: 75vb;
     margin-top: 25px;
     display: flex;
 }
