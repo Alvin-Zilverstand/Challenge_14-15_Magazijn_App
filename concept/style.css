@@ -46,8 +46,9 @@ button:hover{
     padding: 10px;
     border-radius: 15px;
     border:black solid 2px ;
-    margin: 3rem;
+    margin: auto;
     background-color: white;
-    height: 600px;
-    width: 900px;
+    max-width: 90%;
+    margin-top: 25px;
+    display: flex;
 }
